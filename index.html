@@ -1,0 +1,96 @@
+<html>
+  <head><link rel="stylesheet" href="style.css"></head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <body>
+    <div id="container">
+      <header class="header">
+        <h1 id="title">Formulario Personal</h1>
+        <p id="description">Te Demoras Un Minuto</p>
+      </header>
+      <form id="survey-form">
+        <img class="img-found"src="" alt="">
+        <div class="form-group">
+          <label id="name-label">Nombre</label>
+          <input id="name" type="text" name="name" placeholder="Introduzca su Nombre" required>
+    <div class="form-group">
+      <label id="email-label" for="email">Correo Electronico</label>
+      <input  id="email" type="email"  name="email" placeholder="Introduce Tu Correo Electronico" required>
+    </div>
+    <div class="form-group">
+      <label id="number-label">Años(opcional)</label>
+      <input id="number" type="number" name="number" placeholder="Años" min="10" max="80" required>
+    </div>
+    <div class="form-group">
+      <p>¿Que fecha es triste para usted?</p>
+      <select name="role" id="dropdown" class="form-control" required>
+        <option disabled selected value="">Escoja una opción</option>
+        <option value="Navidad">Navidad</option>
+        <option value="cumpleaños">Cumpleaños</option>
+        <option value="mes">31 de Octubre</option>
+        <option value="fecha">Vacaciones</option>
+        <option value="ninguno">No tengo fecha Triste</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="flex">
+        <p>¿Si Ves Alguien En La Calle Que Se Cae Lo Ayudarias?</p>
+        <input type="radio" class="input-radio" value="definitely" name="user-recommend" checked> Definitivamente
+    </label>
+    <label for="flex">
+      <input type="radio" class="input-radio" value="maybe" name="user-recommend"> Quizás
+    </label>
+    <label for="flex">
+      <input type="radio" name="user-recommend" class="input-radio" value="not-sure"> No Estoy Seguro
+    </label>
+    </div>
+    <div class="form-group">
+      <p>Aproximadamente ¿Cuantos Huesos Tiene El Cuerpo Humano?</p>
+      <select name="mostlike" id="most-like" class="form-control" required>
+        <option disabled selected value>Escoge Una Opción</option>
+        <option value="number">40</option>
+        <option value="number">390</option>
+        <option value="number">208</option>
+      </select>
+    </div>  
+    <div class="form-group">
+      <p>¿Que Ingredientes Te Gustán En Una Pizza?
+        <span class="clue">(marque todo lo que Corresponda)</span>
+      </p>
+      <label for="flex">
+        <input type="checkbox" name="prefer" value="fruit" class="input-checkbox">Piña 
+      </label>
+      <label for="flex">
+        <input type="checkbox" name="prefer" value="fruit" class="input-checkbox">Jalapeños
+      </label>
+      <label for="flex">
+        <input type="checkbox" name="prefer" value="front-end-projects" class="input-checkbox">Jamón
+      </label>
+      <label for="flex">
+        <input type="checkbox" name="prefer" value="front-end-projects" class="input-checkbox">Queso 
+      </label>
+      <label for="flex">
+        <input type="checkbox" name="prefer" value="front-end-projects" class="input-checkbox">Champiñon 
+      </label>
+      <label for="flex">
+        <input type="checkbox" name="prefer" value="front-end-projects" class="input-checkbox">Pollo
+      </label>
+      <label for="flex">
+        <input type="checkbox" name="prefer" value="front-end-projects" class="input-checkbox">Bocadillo En El Borde
+      </label>
+    </div>
+    <div class="form-group">
+        <p>¿Frase Que Repitas Mucho?</p>
+        <textarea name="comment" id="comments" placeholder="Escribe Aqui Tu Comentario..."></textarea>
+    </div>
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">Enviar</button>
+    </div>
+  </form>
+</div>
+  </body>
+</html>
